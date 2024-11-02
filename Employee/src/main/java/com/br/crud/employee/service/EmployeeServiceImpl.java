@@ -43,4 +43,16 @@ public class EmployeeServiceImpl extends GenericServiceImpl<Employee, UUID, Empl
         Employee employee = convertToModel(employeeDTO, null);
         return employeeRepository.save(employee);
     }
+
+    @Override
+    public  Employee update(UUID id, EmployeeDTO employeeDTO) throws BusinessException{
+        if (employeeRepository.existsByNis(employeeDTO.nis())) {
+            throw new BusinessException("NIS já cadastrado!");
+        } else if (employeeRepository.existsByEmail(employeeDTO.email())) {
+            throw new BusinessException("E-mail já cadastrado!");
+        }
+
+        Employee employee = convertToModel(employeeDTO, id);
+        return employeeRepository.save(employee);
+    }
 }
