@@ -24,24 +24,17 @@ Este é um projeto de CRUD (Create, Read, Update, Delete) de funcionários, cons
 /Employee
     ├── src
     ├── pom.xml
-    ├── Dockerfile  # Dockerfile do backend
+    ├── Dockerfile
 /Employee-front
     ├── app
     ├── resources
-    ├── Dockerfile  # Dockerfile do frontend
+    ├── Dockerfile
 docker-compose.yml
 ```
 
 ## Funcionalidades
 
 Classes genéricas foram criadas para o reaproveitamento de código, oferecendo funcionalidades básicas como `getAll`, `getById`, `save`, `update` e `delete`. Além disso, foram seguidos os padrões de orientação a objetos, utilizando interfaces na parte de serviços, promovendo um design mais limpo e escalável.
-
-## URLs para Imagens
-
-1. ![Exemplo 1](https://via.placeholder.com/150)
-2. ![Exemplo 2](https://via.placeholder.com/150)
-3. ![Exemplo 3](https://via.placeholder.com/150)
-4. ![Exemplo 4](https://via.placeholder.com/150)
 
 ## Configuração do Ambiente
 
@@ -80,3 +73,11 @@ Os testes podem ser executados através do Maven. Navegue até o diretório do b
 ```bash
 mvn test
 ```
+
+## Imagens do Projeto
+
+1. ![Exemplo 1](images/Operations.png)
+2. ![Exemplo 2](images/List.png)
+3. ![Exemplo 3](images/Add.png)
+4. ![Exemplo 4](images/Update.png)
+5. ![Exemplo 5](images/Delete.png)
