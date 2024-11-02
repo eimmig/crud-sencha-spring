@@ -1,0 +1,21 @@
+services:
+  backend:
+    build: 
+      context: ./Employee
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./src:/app/src
+      - ./pom.xml:/app/pom.xml
+
+  frontend:
+    build:
+      context: ./Employee-front  
+      dockerfile: Dockerfile      
+    volumes:
+      - ./Employee-front:/app     
+    working_dir: /app             
+    ports:
+      - "1841:1841"                
+    command: ["app", "watch"]
