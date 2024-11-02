@@ -48,17 +48,28 @@ Classes genéricas foram criadas para o reaproveitamento de código, oferecendo 
 
     ```bash
     git clone https://github.com/eimmig/crud-sencha-spring.git
+    ```
+
+2. Acesse a pasta clonada:
+    ```bash
     cd crud-sencha-spring
     ```
 
-2. Execute o comando abaixo para iniciar os serviços:
+3. Execute o comando abaixo para iniciar os serviços:
 
     ```bash
     docker-compose up --build
     ```
 
-3. A aplicação backend estará disponível em `http://localhost:8080`.
-4. O frontend estará acessível em `http://localhost:1841`.
+4. Aguarde a seguinte mensagem de log:
+    ```bash
+    frontend-1  | [INF] Loading Build Environment
+    frontend-1  | [LOG] Fashion waiting for changes...
+    frontend-1  | [INF] Waiting for changes...
+    ```
+
+5. A aplicação backend estará disponível em `http://localhost:8080`.
+6. O frontend estará acessível em `http://localhost:1841`.
 
 ## Postman
 
