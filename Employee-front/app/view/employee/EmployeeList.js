@@ -17,13 +17,13 @@ Ext.define('EmployeeApp.view.employee.EmployeeList', {
                 text: 'Operations',
                 menu: [
                     {
-                        text: 'Add Funcionário',
+                        text: 'Adicionar Funcionário',
                         handler: function() {
                             Ext.create('EmployeeApp.view.employee.AddEmployee').show();
                         }
                     },
                     {
-                        text: 'Update Funcionário',
+                        text: 'Atualizar Funcionário',
                         handler: function() {
                             let grid = this.up('employeeslist');
                             let record = grid.getSelectionModel().getSelection()[0];
@@ -37,7 +37,7 @@ Ext.define('EmployeeApp.view.employee.EmployeeList', {
                         }
                     },
                     {
-                        text: 'Delete Funcionário',
+                        text: 'Excluir Funcionário',
                         handler: function() {
                             let grid = this.up('employeeslist');
                             let record = grid.getSelectionModel().getSelection()[0];
