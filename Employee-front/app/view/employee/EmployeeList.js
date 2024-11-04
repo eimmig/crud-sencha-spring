@@ -14,7 +14,7 @@ Ext.define('EmployeeApp.view.employee.EmployeeList', {
         xtype: 'toolbar',
         items: [
             {
-                text: 'Operations',
+                text: 'Operações',
                 menu: [
                     {
                         text: 'Adicionar Funcionário',

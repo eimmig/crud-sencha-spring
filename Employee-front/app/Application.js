@@ -6,7 +6,7 @@
 Ext.define('EmployeeApp.Application', {
     extend: 'Ext.app.Application',
 
-    name: 'Employee App',
+    name: 'Cadástro de Funcionários',
 
     quickTips: false,
     platformConfig: {
